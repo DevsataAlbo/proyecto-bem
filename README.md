@@ -10,7 +10,7 @@ Sitio web estático para "Dr. García & Asociados", un prestigioso bufete especi
 git clone https://github.com/DevsataAlbo/proyecto-bem.git
 
 # Navegar al directorio
-cd te-lo-vendo
+cd proyecto-bem
 
 # Abrir index.html en el navegador
 # Doble click en el archivo o arrastrar al navegador
