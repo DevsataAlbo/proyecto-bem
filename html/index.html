@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. García & Asociados - Servicios Legales</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- BLOQUE: Header -->
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">Dr. García & Asociados</div>
+            <nav>
+                <ul class="header__nav">
+                    <li class="header__nav-item header__nav-item--active">
+                        <a href="#inicio" class="header__nav-link">Inicio</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#servicios" class="header__nav-link">Servicios</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#consulta" class="header__nav-link">Consulta</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#contacto" class="header__nav-link">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- BLOQUE: Hero -->
+    <section class="hero" id="inicio">
+        <div class="hero__container">
+            <h1 class="hero__title">Experiencia Legal a Su Servicio</h1>
+            <p class="hero__subtitle">Más de 15 años defendiendo sus derechos con profesionalismo y dedicación</p>
+            <a href="#consulta" class="button button--primary">Consulta Gratuita</a>
+        </div>
+    </section>
+
+    <!-- BLOQUE: Main Content -->
+    <main class="main-content">
+        <!-- BLOQUE: Services -->
+        <section class="services" id="servicios">
+            <div class="services__container">
+                <h2 class="services__title">Nuestros Servicios Legales</h2>
+                <div class="services__grid">
+                    <article class="service service--featured">
+                        <div class="service__icon">⚖️</div>
+                        <h3 class="service__title">Derecho Civil</h3>
+                        <p class="service__description">
+                            Contratos, responsabilidad civil, daños y perjuicios. 
+                            Protegemos sus intereses en asuntos civiles con experiencia comprobada.
+                        </p>
+                    </article>
+                    
+                    <article class="service">
+                        <div class="service__icon">🏢</div>
+                        <h3 class="service__title">Derecho Comercial</h3>
+                        <p class="service__description">
+                            Constitución de empresas, contratos comerciales, fusiones y adquisiciones. 
+                            Asesoría integral para su negocio.
+                        </p>
+                    </article>
+                    
+                    <article class="service">
+                        <div class="service__icon">👨‍👩‍👧‍👦</div>
+                        <h3 class="service__title">Derecho de Familia</h3>
+                        <p class="service__description">
+                            Divorcios, custodias, pensiones alimentarias. 
+                            Manejamos casos familiares con sensibilidad y profesionalismo.
+                        </p>
+                    </article>
+                </div>
+                
+                <div style="text-align: center;">
+                    <a href="#consulta" class="button button--secondary">Ver Todos los Servicios</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- BLOQUE: Consultation Form -->
+        <section class="consultation-form" id="consulta">
+            <div class="consultation-form__container">
+                <h2 class="consultation-form__title">Solicite una Consulta</h2>
+                <form class="consultation-form__form">
+                    <div class="consultation-form__field">
+                        <label for="nombre" class="consultation-form__label consultation-form__label--required">
+                            Nombre Completo
+                        </label>
+                        <input 
+                            type="text" 
+                            id="nombre" 
+                            name="nombre" 
+                            class="consultation-form__input" 
+                            required
+                        >
+                    </div>
+
+                    <div class="consultation-form__field">
+                        <label for="email" class="consultation-form__label consultation-form__label--required">
+                            Correo Electrónico
+                        </label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            class="consultation-form__input" 
+                            required
+                        >
+                    </div>
+
+                    <div class="consultation-form__field">
+                        <label for="telefono" class="consultation-form__label">
+                            Teléfono
+                        </label>
+                        <input 
+                            type="tel" 
+                            id="telefono" 
+                            name="telefono" 
+                            class="consultation-form__input"
+                        >
+                    </div>
+
+                    <div class="consultation-form__field">
+                        <label for="servicio" class="consultation-form__label consultation-form__label--required">
+                            Tipo de Servicio
+                        </label>
+                        <select 
+                            id="servicio" 
+                            name="servicio" 
+                            class="consultation-form__select" 
+                            required
+                        >
+                            <option value="">Seleccione un servicio</option>
+                            <option value="civil">Derecho Civil</option>
+                            <option value="comercial">Derecho Comercial</option>
+                            <option value="familia">Derecho de Familia</option>
+                            <option value="laboral">Derecho Laboral</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+
+                    <div class="consultation-form__field">
+                        <label for="mensaje" class="consultation-form__label consultation-form__label--required">
+                            Descripción del Caso
+                        </label>
+                        <textarea 
+                            id="mensaje" 
+                            name="mensaje" 
+                            class="consultation-form__textarea" 
+                            placeholder="Describe brevemente tu caso o consulta legal..."
+                            required
+                        ></textarea>
+                    </div>
+
+                    <button type="submit" class="button button--primary button--full-width">
+                        Enviar Consulta
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- BLOQUE: Footer -->
+    <footer class="footer" id="contacto">
+        <div class="footer__container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3 class="footer__title">Contacto</h3>
+                    <div class="footer__contact">
+                        <div class="footer__contact-item">📍 Av. Providencia 1234, Santiago</div>
+                        <div class="footer__contact-item">📞 +56 2 2345 6789</div>
+                        <div class="footer__contact-item">✉️ contacto@garciayasociados.cl</div>
+                    </div>
+                </div>
+
+                <div class="footer__section">
+                    <h3 class="footer__title">Horarios</h3>
+                    <div class="footer__contact">
+                        <div class="footer__contact-item">Lunes a Viernes: 9:00 - 18:00</div>
+                        <div class="footer__contact-item">Sábados: 9:00 - 13:00</div>
+                        <div class="footer__contact-item">Consultas de emergencia 24/7</div>
+                    </div>
+                </div>
+
+                <div class="footer__section">
+                    <h3 class="footer__title">Enlaces</h3>
+                    <ul class="footer__links">
+                        <li><a href="#" class="footer__link">Sobre Nosotros</a></li>
+                        <li><a href="#" class="footer__link">Casos Exitosos</a></li>
+                        <li><a href="#" class="footer__link">Blog Jurídico</a></li>
+                        <li><a href="#" class="footer__link">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2024 Dr. García & Asociados. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
